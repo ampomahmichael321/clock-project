@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.timer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.set-timer-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.set-timer-inputs {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1em;
+  width: 100%;
+}
+.timer-input {
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+  width: 30%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
+.timer-input input {
+  width: 100%;
+  text-align: center;
+  height: 3em;
+}
+.start-timer-btn,
+.reset-timer-btn {
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: transparent;
+  color: white;
+  border: solid white 1px;
+  transition: transform 0.3s ease;
+  width: 7em;
+}
+.start-timer-btn:hover,
+.reset-timer-btn:hover {
+  transform: translateY(-3px);
+}
+.button-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+@media (min-width: 800px) {
+  .button-section {
+    flex-direction: row;
+  }
+}
